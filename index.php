@@ -24,20 +24,20 @@
   <div class="container">
   <form method="get">
       <div class="row">
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="culture" id="culture" placeholder="culture"> coef 2 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="anglais" id="anglais" placeholder="anglais"> coef 2 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="maths_ecrit" id="maths_ecrit" placeholder="maths_ecrit"> coef 2 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="maths_algo" id="maths_algo" placeholder="maths_algo"> coef 1 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="cejm" id="cejm" placeholder="cejm"> coef 3 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" required class="form-control" name="culture" id="culture" placeholder="culture"> coef 2 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" required class="form-control" name="anglais" id="anglais" placeholder="anglais"> coef 2 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" required class="form-control" name="maths_ecrit" id="maths_ecrit" placeholder="maths_ecrit"> coef 2 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" required class="form-control" name="maths_algo" id="maths_algo" placeholder="maths_algo"> coef 1 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" required class="form-control" name="cejm" id="cejm" placeholder="cejm"> coef 3 </div>
     </div>
     <div class="row">
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="e4" id="e4" placeholder="e4"> coef 4 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="e5" id="e5" placeholder="e5"> coef 4 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="e6" id="e6" placeholder="e6"> coef 4 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="lv2" id="lv2" placeholder="lv2"> pts > 10 coef 1 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="math_app" id="math_app" placeholder="math_app"> pts > 10 coef 1 </div>
-<div class="col"> <input type="number" step="1" min="0" max="20" class="form-control" name="certif" id="certif" placeholder="certif"> pts > 10 coef 1 </div>
-<div class="col"> <input type="submit" step="1" min="0" max="20" class="form-control" name="submit" id="submit">
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" required class="form-control" name="e4" id="e4" placeholder="e4"> coef 4 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" required class="form-control" name="e5" id="e5" placeholder="e5"> coef 4 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" required class="form-control" name="e6" id="e6" placeholder="e6"> coef 4 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" class="form-control" name="lv2" id="lv2" placeholder="lv2"> pts > 10 coef 1 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" class="form-control" name="math_app" id="math_app" placeholder="math_app"> pts > 10 coef 1 </div>
+<div class="col"> <input type="number" step="1" min="0" max="20" maxlength="2" class="form-control" name="certif" id="certif" placeholder="certif"> pts > 10 coef 1 </div>
+<div class="col"> <input type="submit" step="1" min="0" max="20" maxlength="2" class="btn btn-primary mb-3" name="submit" id="submit">
     </div>
     </form>
 </div>
@@ -55,7 +55,7 @@
     $cejm = $_GET['cejm'] * 3;
     $e4 = $_GET['e4'] * 4;
     $e5 = $_GET['e5'] * 4;
-    $e6 = $_GET['e5'] * 4;
+    $e6 = $_GET['e6'] * 4;
     $lv2 = $_GET['lv2'];
     $math_app = $_GET['math_app'];
     $certif = $_GET['certif'];
