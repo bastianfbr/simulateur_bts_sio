@@ -12,6 +12,7 @@
     $lv2 = $_GET['lv2'];
     $math_app = $_GET['math_app'];
     $certif = $_GET['certif'];
+    $engagement = $_GET['engagement'];
     $total = $culture + $anglais + $maths_ecrit + $maths_algo + $cejm + $e4 + $e5 + $e6;
     if ($lv2 > 10) {
         $lv2 = $lv2 - 10;
@@ -24,6 +25,10 @@
     if ($certif > 10) {
         $certif = $certif - 10;
         $total = $total + $certif;
+    }
+    if ($engagement > 10) {
+        $engagement = $engagement - 10;
+        $total = $total + $engagement;
     }
     $moyenne = $total / 22;
 echo "
