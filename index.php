@@ -63,6 +63,9 @@
             <input type="number" step="1" min="0" max="20" maxlength="2" class="form-control" name="certif" id="certif" placeholder="certif"> pts > 10 coef 1
           </div>
           <div class="col">
+            <input type="number" step="1" min="0" max="20" maxlength="2" class="form-control" name="engagement" id="engagement" placeholder="engagement"> pts > 10 coef 1
+          </div>
+          <div class="col">
             <input type="submit" step="1" min="0" max="20" maxlength="2" class="btn btn-primary mb-3" name="submit" id="submit">
           </div>
       </form>
